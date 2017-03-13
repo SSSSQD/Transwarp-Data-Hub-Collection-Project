@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Hibernate/Hibernate.iml" filepath="$PROJECT_DIR$/Hibernate/Hibernate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate4/Hibernate4.iml" filepath="$PROJECT_DIR$/Hibernate4/Hibernate4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate5/Hibernate5.iml" filepath="$PROJECT_DIR$/Hibernate5/Hibernate5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/batchInsert/batchInsert.iml" filepath="$PROJECT_DIR$/batchInsert/batchInsert.iml" />
+      <module fileurl="file://$PROJECT_DIR$/complexSearch/complexSearch.iml" filepath="$PROJECT_DIR$/complexSearch/complexSearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dfsClient/dfsClient.iml" filepath="$PROJECT_DIR$/dfsClient/dfsClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/es/es.iml" filepath="$PROJECT_DIR$/es/es.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flumeInterceptor/flumeInterceptor.iml" filepath="$PROJECT_DIR$/flumeInterceptor/flumeInterceptor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flumeSink/flumeSink.iml" filepath="$PROJECT_DIR$/flumeSink/flumeSink.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flumeSource/flumeSource.iml" filepath="$PROJECT_DIR$/flumeSource/flumeSource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hbaseEs/hbaseEs.iml" filepath="$PROJECT_DIR$/hbaseEs/hbaseEs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iBatis/iBatis.iml" filepath="$PROJECT_DIR$/iBatis/iBatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafkaConsumer/kafkaConsumer.iml" filepath="$PROJECT_DIR$/kafkaConsumer/kafkaConsumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafkaDecoder/kafkaDecoder.iml" filepath="$PROJECT_DIR$/kafkaDecoder/kafkaDecoder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafkaProducer/kafkaProducer.iml" filepath="$PROJECT_DIR$/kafkaProducer/kafkaProducer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/keywordSearch/keywordSearch.iml" filepath="$PROJECT_DIR$/keywordSearch/keywordSearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multiLocalMode/multiLocalMode.iml" filepath="$PROJECT_DIR$/multiLocalMode/multiLocalMode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/objectStore/objectStore.iml" filepath="$PROJECT_DIR$/objectStore/objectStore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rJava/rJava.iml" filepath="$PROJECT_DIR$/rJava/rJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/streamDataCheck/streamDataCheck.iml" filepath="$PROJECT_DIR$/streamDataCheck/streamDataCheck.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tdh-collection.iml" filepath="$PROJECT_DIR$/tdh-collection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tdh-demo.iml" filepath="$PROJECT_DIR$/tdh-demo.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.transwarp:idbc-core:1.0.0-transwarp-tdh463">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/io/transwarp/idbc-core/1.0.0-transwarp-tdh463/idbc-core-1.0.0-transwarp-tdh463.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/io/transwarp/idbc-core/1.0.0-transwarp-tdh463/idbc-core-1.0.0-transwarp-tdh463-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/io/transwarp/idbc-core/1.0.0-transwarp-tdh463/idbc-core-1.0.0-transwarp-tdh463-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

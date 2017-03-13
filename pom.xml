@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.transwarp.collection</groupId>
+    <artifactId>tdh-collection</artifactId>
+    <packaging>pom</packaging>
+    <version>0.4v</version>
+    <modules>
+        <module>rJava</module>
+        <module>streamDataCheck</module>
+        <module>objectStore</module>
+        <module>multiLocalMode</module>
+        <module>keywordSearch</module>
+        <module>kafkaProducer</module>
+        <module>kafkaDecoder</module>
+        <module>flumeSink</module>
+        <module>flumeInterceptor</module>
+        <module>dfsClient</module>
+        <module>complexSearch</module>
+        <module>batchInsert</module>
+        <module>iBatis</module>
+        <module>hibernate</module>
+        <module>Hibernate</module>
+        <module>kafkaConsumer</module>
+        <module>flumeSource</module>
+        <module>Hibernate4</module>
+        <module>Hibernate5</module>
+        <module>es</module>
+        <module>hbaseEs</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+    </properties>
+
+</project>

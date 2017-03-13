@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="batchInsert" />
+        <module name="complexSearch" />
+        <module name="dfsClient" />
+        <module name="es" />
+        <module name="flumeInterceptor" />
+        <module name="flumeSink" />
+        <module name="flumeSource" />
+        <module name="hbaseEs" />
+        <module name="Hibernate" />
+        <module name="Hibernate4" />
+        <module name="Hibernate5" />
+        <module name="iBatis" />
+        <module name="kafkaConsumer" />
+        <module name="kafkaDecoder" />
+        <module name="kafkaProducer" />
+        <module name="keywordSearch" />
+        <module name="multiLocalMode" />
+        <module name="objectStore" />
+        <module name="rJava" />
+        <module name="streamDataCheck" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="batchInsert" target="1.7" />
+      <module name="complexSearch" target="1.7" />
+      <module name="dfsClient" target="1.7" />
+      <module name="es" target="1.7" />
+      <module name="flumeInterceptor" target="1.7" />
+      <module name="flumeSink" target="1.7" />
+      <module name="flumeSource" target="1.7" />
+      <module name="hbaseEs" target="1.7" />
+      <module name="Hibernate" target="1.7" />
+      <module name="Hibernate4" target="1.7" />
+      <module name="Hibernate5" target="1.7" />
+      <module name="iBatis" target="1.7" />
+      <module name="kafkaConsumer" target="1.7" />
+      <module name="kafkaDecoder" target="1.7" />
+      <module name="kafkaProducer" target="1.7" />
+      <module name="keywordSearch" target="1.7" />
+      <module name="multiLocalMode" target="1.7" />
+      <module name="objectStore" target="1.7" />
+      <module name="rJava" target="1.7" />
+      <module name="streamDataCheck" target="1.7" />
+      <module name="tdh-collection" target="1.7" />
+      <module name="tdh-demo" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

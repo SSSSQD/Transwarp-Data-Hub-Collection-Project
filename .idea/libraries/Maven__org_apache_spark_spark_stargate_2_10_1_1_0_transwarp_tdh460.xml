@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.spark:spark-stargate_2.10:1.1.0-transwarp-tdh460">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-stargate_2.10/1.1.0-transwarp-tdh460/spark-stargate_2.10-1.1.0-transwarp-tdh460.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-stargate_2.10/1.1.0-transwarp-tdh460/spark-stargate_2.10-1.1.0-transwarp-tdh460-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-stargate_2.10/1.1.0-transwarp-tdh460/spark-stargate_2.10-1.1.0-transwarp-tdh460-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

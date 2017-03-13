@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="test/xsl" href="configuration.xsl"?>
+<configuration>
+    <property>
+        <name>driver_name</name>
+        <value>org.apache.hive.jdbc.HiveDriver</value>
+    </property>
+    <property>
+        <name>mode</name>
+        <value>simple</value>
+        <!-- simple, LDAP, kerbeos -->
+    </property>
+    <property>
+        <name>simple_jdbc_url</name>
+        <value>jdbc:hive2://172.16.2.93:10000/default</value>
+    </property>
+    <property>
+        <name>ldap_jdbc_url</name>
+        <value>jdbc:hive2://172.16.2.93:10000/default</value>
+    </property>
+    <property>
+        <name>ldap_name</name>
+        <value>hive</value>
+    </property>
+    <property>
+        <name>ldap_passwd</name>
+        <value>123456</value>
+    </property>
+    <property>
+        <name>kerberos_jdbc_url</name>
+        <value>jdbc:hive2://172.16.2.93:10000/default;principal=hive/CT-1@TDH;kuser=hive;keytab=E://hive.keytab;authentication=kerberos;krb5conf=E://krb5.conf</value>
+    </property>
+    <property>
+        <name>batchinsert_with_struct_rowkey</name>
+        <!-- 由于xml原因，先将<替换为@，>替换为#，然后在程序中接着替换-->
+        <value>drop table if exists batchinsertwithstructrowkey;create table if not exists batchinsertwithstructrowkey (key struct@c2:int,c1:int# ,c0 string, c1 int,c2 int) stored by 'org.apache.hadoop.hive.hbase.HBaseStorageHandler';insert into batchinsertwithstructrowkey(c0, c1, c2) values(?,?,?)</value>
+    </property>
+    <property>
+        <name>batchinsert_without_struct_rowkey</name>
+        <value>drop table if exists batchinsertwithoutstructrowkey;create table if not exists batchinsertwithoutstructrowkey (c1 int,c2 int) stored by 'org.apache.hadoop.hive.hbase.HBaseStorageHandler';insert into batchinsertwithoutstructrowkey(c1, c2) values(?,?)</value>
+        <!--value>drop table if exists batchinsertorc;create table if not exists batchinsertorc (c1 int, c2 int) CLUSTERED BY (c1) INTO 2 BUCKETS STORED AS ORC TBLPROPERTIES ("transactional"="true");insert into batchinsertorc(c1, c2) values(?,?)</value-->
+    </property>
+    <property>
+        <name>thread_pool_size</name>
+        <!-- 线程池大小，本例建议1 -->
+        <value>1</value>
+    </property>
+    <property>
+        <name>thread_num</name>
+        <!-- 线程数量，本例建议1 -->
+        <value>1</value>
+    </property>
+</configuration>
