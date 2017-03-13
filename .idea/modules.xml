@@ -23,7 +23,6 @@
       <module fileurl="file://$PROJECT_DIR$/rJava/rJava.iml" filepath="$PROJECT_DIR$/rJava/rJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/streamDataCheck/streamDataCheck.iml" filepath="$PROJECT_DIR$/streamDataCheck/streamDataCheck.iml" />
       <module fileurl="file://$PROJECT_DIR$/tdh-collection.iml" filepath="$PROJECT_DIR$/tdh-collection.iml" />
-      <module fileurl="file://$PROJECT_DIR$/tdh-demo.iml" filepath="$PROJECT_DIR$/tdh-demo.iml" />
     </modules>
   </component>
 </project>
