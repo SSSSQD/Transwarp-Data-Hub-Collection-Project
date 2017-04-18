@@ -69,23 +69,13 @@ public class SearchES {
             for (Terms.Bucket bucket : terms.getBuckets()) {
                 StringBuilder stringBuilder = new StringBuilder();
                 String key = (String) bucket.getKey();
-//                System.out.println("key is " + key);
-
                 long count = bucket.getDocCount();
-//                System.out.println("count is " + count);
-
                 Sum sumAgg = bucket.getAggregations().get("my_sum_fieldB");
                 long sum = (long) sumAgg.getValue();
-//                System.out.println("sum is " + sum);
-
                 Avg avgAgg = bucket.getAggregations().get("my_avg_fieldB");
                 double avg = avgAgg.getValue();
-//                System.out.println("avg is " + avg);
-
                 Max maxAgg = bucket.getAggregations().get("my_max_fieldB");
                 double max = maxAgg.getValue();
-//                System.out.println("max is " + max);
-
                 stringBuilder.append("key is " + key + ", count is " + count +
                         ", sum is " + sum + ", avg is " + avg + ", max is " + max);
                 System.out.println(stringBuilder.toString());
@@ -103,42 +93,19 @@ public class SearchES {
                     settings(settings).build().addTransportAddress(
                     new InetSocketTransportAddress(InetAddress.getByName("172.16.2.94"), 9300));
             SearchRequestBuilder searchRequestBuilder = transportClient.prepareSearch("sqd.es_start");
-
-//            SearchResponse searchResponse = searchRequestBuilder.
-//                    setQuery(QueryBuilders.wildcardQuery("content","*oracle*"))
-//                    .setFrom(0).setSize(100).setExplain(true).execute().actionGet();
-
 //            SearchResponse searchResponse = searchRequestBuilder.
 //                    setQuery(QueryBuilders.boolQuery()
 //                    .filter(QueryBuilders.wildcardQuery("content","*oracle*"))
 //                    .filter(QueryBuilders.wildcardQuery("tint","1")))
 //                    .setFrom(0).setSize(100).setExplain(true).execute().actionGet();
 
-//            SearchResponse searchResponse = searchRequestBuilder.
-//                    setQuery(QueryBuilders.boolQuery()
-//                    .must(QueryBuilders.wildcardQuery("content","*oracle*"))
-//                    .must(QueryBuilders.wildcardQuery("tint","1")))
-//                    .setFrom(0).setSize(100).setExplain(true).execute().actionGet();
-
-
-//{"query": {"bool": {"must": [{"or": [{"term": {"content": "oracle"}},{"term": {"content": "oracle is database"}}]}],"must_not": [],"should": []}},"from": 0,"size": 10,"sort": [],"aggs": {}}
-//            SearchResponse searchResponse = searchRequestBuilder.
-//                    setQuery(QueryBuilders.boolQuery()
-//                    .must(QueryBuilders.termsQuery("content", "oracle", "oracle is database")))
-//                    .setFrom(0).setSize(100).setExplain(true).execute().actionGet();
-
 //{"query": {"bool": {"must": [{"or": [{"wildcard": {"content": "*oracle*"}},{"wildcard": {"content": "*mysql*"}}]}],"must_not": [],"should": []}},"from": 0, "size": 10, "sort": [],"aggs": {}}
-//            SearchResponse searchResponse = searchRequestBuilder.
-//                    setQuery(QueryBuilders.boolQuery()
-//                    .must(QueryBuilders.orQuery(QueryBuilders.wildcardQuery("content","*mysql*"),
-//                            QueryBuilders.wildcardQuery("content","*oracle*")))
-//                    .must(QueryBuilders.termQuery("tbool","false")))
-//                    .setFrom(0).setSize(100).setExplain(true).execute().actionGet();
             SearchResponse searchResponse = searchRequestBuilder.
                     setQuery(QueryBuilders.boolQuery()
-                    .must(QueryBuilders.matchPhraseQuery("content","*oracle*")))
+                    .must(QueryBuilders.orQuery(QueryBuilders.wildcardQuery("content","*mysql*"),
+                            QueryBuilders.wildcardQuery("content","*oracle*")))
+                    .must(QueryBuilders.termQuery("tbool","false")))
                     .setFrom(0).setSize(100).setExplain(true).execute().actionGet();
-
             SearchHits searchHits = searchResponse.getHits();
             System.out.println();
             System.out.println("Total Hits is " + searchHits.totalHits());
@@ -250,9 +217,9 @@ public class SearchES {
 
     public static void main(String[] args) {
         multisearch();
-//        statsQuery();
-//        wildcardQuery();
-//        jsonquery();
-//        createByJson();
+        statsQuery();
+        wildcardQuery();
+        jsonquery();
+        createByJson();
     }
 }
