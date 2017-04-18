@@ -96,4 +96,4 @@ The Transwarp Data Hub Maven repository, you can download [here](http://support.
 
 ## Support
 
-* You can post bug reports and feature requests at the [Issue Page](https://github.com/Transwarp-DE/Transwarp-Sample-Code/issues)
+* You can post bug reports and feature requests at the [Issue Page](https://github.com/SSSSQD/Transwarp-Data-Hub-Collection-Project/issues)
