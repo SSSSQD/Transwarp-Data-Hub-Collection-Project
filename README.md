@@ -1,4 +1,4 @@
-# Transwarp Sample Code
+# Transwarp
 
 This repository contains the example projects for componetnts on [Transwarp Data Hub](http://www.transwarp.cn/product/tdh) (This repository contains mostly projects in [Transwarp Sample Code](https://github.com/Transwarp-DE/Transwarp-Sample-Code)).
 
